@@ -1,8 +1,0 @@
-title: Shouso.github.io
-description: shouso.github.io
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-tactile
-
-gems:
-  - jekyll-mentions
