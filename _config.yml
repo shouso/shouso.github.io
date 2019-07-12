@@ -883,3 +883,5 @@ oss_projects:
     link: artsy/rosalind
     repository: https://github.com/artsy/rosalind
     created: Dec 22nd, 2016
+
+theme: jekyll-theme-merlot
