@@ -1,0 +1,20 @@
+---
+layout: post
+title: Aplikasi SAS 2018 di Ubuntu 18.04
+date: '2018-04-30T18:32:00.000-07:00'
+author: Shouso
+tags:
+- blog linux
+- Ubuntu
+- Wine
+- Accounting
+- winetricks
+- '18.04'
+- Aplikasi SAS
+modified_time: '2018-04-30T18:32:15.094-07:00'
+thumbnail: https://2.bp.blogspot.com/-uCr9-HkE6m0/WufDNV7T5MI/AAAAAAAAFSM/grI0pqmk7qY4dEZht4w54W0eYxws_lY2wCLcBGAs/s72-c/Screenshot%2Bfrom%2B2018-04-30%2B23-38-05.png
+blogger_id: tag:blogger.com,1999:blog-1667078280118069816.post-1732276244250337734
+blogger_orig_url: https://www.naciro.xyz/2018/04/aplikasi-sas-2018-di-ubuntu-1804.html
+---
+
+<div style="text-align: justify;">Salah satu kekurangan Gnu/Linux itu belum dilirik sama pengembang aplikasi pendukung pelaksanaan APBN agar dibikinin versi Linuxnya. Padahal Aplikasi SAS ( aplikasi Utamanya) itu make basis data MySQL yang notabenenya ada bau FOSS nya, tapi sih emang antarmuka nya masih make foxfro yang hanya ada di MS Windows.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Ini jadi masalah karena saya hanya make linux di Laptop saya, padahal sebagai lelaki panggilan itu saya kadang mesti ngerjain itu dirumah.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Apalagi pas cuti agak lama, ga enak juga kalo ninggalin semua tugas CSO di kantor, jadinya kemarin kepikiran bisa ga sih install Aplikasi SAS via Wine di Ubuntu 18.04? Kebetulan saya baru install lagi ubuntu setelah sekian lama pake Debian.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Permasalahan utama dari instalasi Aplikasi SAS di wine adalah mysql connector nya takut ga nyambung sehingga meskipun database dan aplikasi sas nya keinstall, tetap ga mau jalan.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">iseng googling eh ketemu <a href="http://www.sanitarium.co.za/how-to-get-wine-windows-mysql-connectorodbc-and-ubuntu-13-10-to-all-be-friends/">http://www.sanitarium.co.za/</a> yang ngasih trik agar mysql connectornya bisa jalan. Di dukung Ubuntu yang lebih bebas make non-free software ketimbang maknya Debian, makanya install Aplikasi SAS 2018 kemungkinan besar sukses... dan tada... emang sukses. Langkahnya secara garis besar tinggal install wine winetricks sama librari windows yang dibutuhkan oleh wine via winetricks, terus install aplikasi sas terakhir install mysql connector.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">setelah dicoba keluar kek ini</div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-uCr9-HkE6m0/WufDNV7T5MI/AAAAAAAAFSM/grI0pqmk7qY4dEZht4w54W0eYxws_lY2wCLcBGAs/s1600/Screenshot%2Bfrom%2B2018-04-30%2B23-38-05.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="768" data-original-width="1366" height="223" src="https://2.bp.blogspot.com/-uCr9-HkE6m0/WufDNV7T5MI/AAAAAAAAFSM/grI0pqmk7qY4dEZht4w54W0eYxws_lY2wCLcBGAs/s400/Screenshot%2Bfrom%2B2018-04-30%2B23-38-05.png" width="400" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">artine sukses.... selamat selamat....&nbsp;</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">matursuwun..</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">nb. langkahnya nanti aja ya... mo ngopi duyu/....</div>

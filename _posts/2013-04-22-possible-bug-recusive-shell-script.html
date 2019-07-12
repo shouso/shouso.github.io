@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'Possible Bug : Recursive Shell Script Cause Linux Box Hang'
+date: '2013-04-22T20:10:00.000-07:00'
+author: Shouso
+tags:
+- Linux
+- error
+- Bug
+- bash
+- shell script
+modified_time: '2014-10-01T03:57:34.479-07:00'
+blogger_id: tag:blogger.com,1999:blog-1667078280118069816.post-7652563793549416767
+blogger_orig_url: https://www.naciro.xyz/2013/04/possible-bug-recusive-shell-script.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://e.cdn-hardware.com.br/static/20100805/openterm.png.optimized.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://e.cdn-hardware.com.br/static/20100805/openterm.png.optimized.jpg" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><br />This is possible bug for Linux box.. if you get typo and accidently type such as <a href="http://askubuntu.com/users/17226/umpirsky" target="_blank">umpirsky </a>doing, you can get your linux box going freeze.. you dare to try it.. here the script<br /><span style="background-color: #d9d2e9;"><br /></span><span style="background-color: #d9d2e9;"></span><br /><pre><span style="background-color: #d9d2e9;"><span style="color: red;"><code>#!/bin/bash<br /># filename: kill-me-please.sh   <br />./kill-me-please.sh&nbsp;</code></span></span></pre><pre><span style="background-color: #d9d2e9;"><span style="color: red;"><code><br /></code></span></span></pre><pre><span style="background-color: #d9d2e9;"><span style="color: red;"><code><br /></code></span></span></pre><pre><span style="background-color: #d9d2e9;"><span style="color: red;"><code><span style="background-color: #eeeeee;"></span><span style="background-color: black;"><span style="background-color: #f3f3f3;"><span style="color: black;">so what you get....</span></span></span></code></span></span></pre><pre><span style="background-color: #d9d2e9;"><span style="color: red;"><code><span style="background-color: black;"><span style="background-color: #f3f3f3;"><span style="color: black;">&nbsp;</span></span></span></code></span></span></pre><pre><span style="background-color: #d9d2e9;"><span style="color: red;"><code><span style="background-color: black;"><span style="background-color: #f3f3f3;"><span style="color: black;">Next Read :&nbsp;</span></span></span></code></span></span></pre><ul><li><pre><a href="http://askubuntu.com/questions/284139/should-recursive-shell-script-lock-up-the-system"><span style="background-color: #d9d2e9;"><span style="color: red;"><code><span style="background-color: black;"><span style="background-color: #f3f3f3;"><span style="color: black;">http://askubuntu.com/questions/284139/should-recursive-shell-script-lock-up-the-system</span></span></span></code></span></span></a></pre></li><li><pre><span style="background-color: #d9d2e9;"><span style="color: red;"><code><a href="http://e.cdn-hardware.com.br/static/20100805/openterm.png.optimized.jpg" rel="nofollow" target="_blank"><span style="background-color: black;"><span style="background-color: #f3f3f3;"><span style="color: black;">http://e.cdn-hardware.com.br/static/20100805/openterm.png.optimized.jpg </span></span></span></a></code></span></span></pre></li></ul>

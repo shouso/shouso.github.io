@@ -1,0 +1,19 @@
+---
+layout: post
+title: Edit Service yang Jalan pas Booting di Debian Wheezy
+date: '2013-08-15T07:14:00.001-07:00'
+author: Shouso
+tags:
+- sysv-rc-conf
+- Wheezy
+- Startup
+- update-rc.d -f
+- service
+- debian
+- rcconf
+modified_time: '2013-09-11T23:11:07.175-07:00'
+blogger_id: tag:blogger.com,1999:blog-1667078280118069816.post-6656832872060956251
+blogger_orig_url: https://www.naciro.xyz/2013/08/edit-service-yang-jalan-pas-booting-di.html
+---
+
+<div style="text-align: justify;"><pre><div class="line" id="LC1" style="padding-left: 10px;"><br /><div><br /><div><br /><span style="color: #333333; font-family: Consolas, Liberation Mono, Courier, monospace;"><span style="font-size: 12px; line-height: 18px;">Ini laptop kok berat amir sih, padahal makenya juga cuma gnome-fallback... masalahnya apa <br />sih?? cek punya cek ternyata service aplikasi saya lumayan banyak dan beberapa termasuk  <br />kelas berat.<br /><br />Ada 130 an daemon yang otomatis hidup setelah masuk ke desktop, jadi ya wajar juga sih RAM saya abis terus-terusan. Yang paling berat itu keknya openerp-server, apache, sama postgres<br /><br />Lha, taunya gimana klo itu aplikasi paling banyak makan sumber daya RAM , pake aja top,<br />atau kalo mau keren ya pake conky plus skripnya yang yahud.<br /> <br />Terus, cek juga isi /etc/init.d untuk liat service apa aja yang jala ketika komputer<br />(PC/laptop) idup. jangan lupa liatin juga lewat menu System Tools&gt;&gt;Preferences&gt;&gt;Startup<br />Applications kalo make gnome-fallback untuk ngecek aplikasi apa saja yang otomatis jalan<br />dan matiin yang ga terlalu penting, kalo kasus saya sih bluetooth manager sama desktop <br />sharingnya.<br /><br />Nah, kalo dari menu System Tools&gt;&gt;Preferences&gt;&gt;Startup Applications itu untuk <br />aplikasi yang emang kedaftar di DE nya dan yang kita buat via menu tadi, tetapi sebagian <br />aplikasi bikin sendiri file di /etc/init.d/ tanpa mendaftarkannya ke aplikasi tadi. Ini <br />yang bikin bingung, mau gimana matiinnya.<br /><br />Ternyata setelah nanya  gugling, ada juga tools untuk memudahkan tugas tadi,yakni <br />menggunakan rcconf, sysv-rc-conf, dan dengan membuang secara manual dari proses booting  pake <br />update-rc.d -f remove (nama service).<br /><br />Tapi, yang paling gampang itu ya rcconf, karena tampilannya sederhana, dan ga terlalu<br />njelimet untuk orang-orang yang cuma make Wheezy di desktop kayak saya. hehehe...<br />Installnya juga gampang, tinggal ketik apt-get install rcconf, tunggu sampe selesai, dan <br /><br />jalanin rcconf dengan user root. tapi hati-hati ya kalo menonaktifkan service pas boot, <br />pilih service yang bener-bener ente tau ga berpengaruh kepada sistem, klo kasus saya sih <br />openerp-server apache sama posgresql, karena emang saya pake setiap saat.pas butuh aja<br />nanti saya idupin servicenya gitu....<br /> <br />next read :<br />http://theos.in/desktop-linux/removing-unwanted-startup-debian-files-or-services/<br />support by www.faihana-store.com<br /><br /><br />oke.. begitu catatan saya hari ini terima kasih...<br /><br /><br /></span></span></div><br /></div><br /></div><br /></pre></div>

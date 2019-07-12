@@ -1,0 +1,20 @@
+---
+layout: post
+title: 'Monitoring Suhu di Debian Wheezy Part III : Psensor dan xsensors'
+date: '2013-11-02T23:33:00.002-07:00'
+author: Shouso
+tags:
+- psensor
+- whatsapp-purple. Wheezy
+- Monitor
+- monitoring suhu
+- Temperatures
+- debian
+- xsensor
+modified_time: '2013-11-02T23:33:42.799-07:00'
+thumbnail: http://3.bp.blogspot.com/-QnhkZrEJZBA/Ul9cu1EybQI/AAAAAAAACU8/kNNkxW_fYKE/s72-c/Screenshot+from+2013-10-17+10:41:39.png
+blogger_id: tag:blogger.com,1999:blog-1667078280118069816.post-3762399531675752058
+blogger_orig_url: https://www.naciro.xyz/2013/11/monitoring-suhu-di-debian-wheezy-part.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-QnhkZrEJZBA/Ul9cu1EybQI/AAAAAAAACU8/kNNkxW_fYKE/s1600/Screenshot+from+2013-10-17+10:41:39.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="122" src="http://3.bp.blogspot.com/-QnhkZrEJZBA/Ul9cu1EybQI/AAAAAAAACU8/kNNkxW_fYKE/s320/Screenshot+from+2013-10-17+10:41:39.png" width="320" /></a></div><div style="text-align: center;"><div style="text-align: center;">grafik psensor</div><div style="text-align: center;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: center;"><br /></div></div><div style="text-align: justify;">Kalo sekedar memonitor suhu mesin, menggunakan antarmuka xsensor atau psensor sebenarnya lebih dari cukup. Terutama psensor yang juga dapat digunakan di sisi server yang dapat digunakan untuk memonitor suhu server secara remote dari client. Tapi ya itu, ini hanya dapat digunakan untuk memonitor suhu dan load dari CPU, ga bisa yang lain.<br /><br />Kalo xsensor hanyalah antarmuka grafis dari paket sensor yang menjadi prasyarat semua paket yang berhubungan dengan monitoring suhu di mesin debain anda.<br /><br />Kalo mau install psensor atau xsensor sih sangat gampang, tinggal setting repo debian aja, karena keduanya emang udah masuk ke repo debian terus gunakan apt-get install untuk melakukan instalasi. Tentunya udah melakukan setting sensornya sesuai dengan postingan <a href="http://www.attaqi.com/2013/10/monitoring-suhu-di-debian-wheezy-bagian.html" target="_blank">ini</a>. Kalos sudah tinggal ketikkan apt-get install psensor xsensors . Otomatis akan melakukan instalasi beberapa paket&nbsp; yang dibutuhkan termasuk hddtemp dll.<br /><br />kalo udah, tinggal jalanin aja psensor lewat menu. hasilnya kayak gambar diatas.<br /><br />&nbsp;Kalo xsensors, persis sama hasil dari perintah sensors kalo via terminal, tapi ini dijalanin di lingkungan antarmuka grafis. hasilnya hanya menampilkan suhu sesuai dengan sensor yang ada di sistem. Hasilnya seperti gambar berikut ini :<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-PBqb90kPlYg/UnXtr3LszXI/AAAAAAAACWw/yvpvQPKqt1c/s1600/2013-11-03-132813_281x138_scrot.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-PBqb90kPlYg/UnXtr3LszXI/AAAAAAAACWw/yvpvQPKqt1c/s1600/2013-11-03-132813_281x138_scrot.png" /></a></div><div style="text-align: center;"><br /></div><br />&nbsp;</div>

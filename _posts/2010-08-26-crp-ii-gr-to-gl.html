@@ -1,0 +1,22 @@
+---
+layout: post
+title: CRP II, GR to GL
+date: '2010-08-26T21:00:00.000-07:00'
+author: Shouso
+tags:
+- FOSS
+- ekonomi
+- Bussiness Proses
+- free
+- pribadi
+- Berita SPAN
+- teknologi
+- SPAN
+- Transformasi
+- Perbendaharaan
+modified_time: '2013-03-31T20:36:48.601-07:00'
+blogger_id: tag:blogger.com,1999:blog-1667078280118069816.post-7794178748475276489
+blogger_orig_url: https://www.naciro.xyz/2010/08/crp-ii-gr-to-gl.html
+---
+
+Jum'at, 23 Juli 2010<br/><br/>Hari ini terakhir melakukan reviu jurnal untuk modul GR yang dilakukan bersama dngan para PIC dari Modul General Ledger, sehingga senin secara resmi CRP II untuk GR selesai, tinggal bagaimana reviu nya dan end to end integration demo nanti.Berat memang, karena tidak semua transaksi yang harus dicatat dalam SPAN nantinya memiliki dokumentasi.<a name='more'></a><br/><br/>Hal yang krusial dalam reviu jurnal di Modul GR adalah kapan titik pengakuan pendapatan atas setoran yang diterima oleh Kas Negara. Beberapa jenis setoran, penentuan pengakuan tersebut mudah, misalnya untuk Pendapatan Pajak yang diterima melalui Bank persepsi, maka diakui sebagai penerimaan saat masuk dana di setor di rekening pemerintah di bank persepsi. Akan tetapi, terkadang ada beberapa transakasi yang sangat susah untuk menentukan kapan suatu setoran diakui sebagai penerimaan negara. Contoh paling mudah adalah setoran migas yang melalui RPL migas. Cukup sulit untuk menentukan kapan dana yang ada di RPL Migas diakui sebagai pendapatan mengingat masih tercampurnya jenis-jenis setoran dalam rekening di BI tersebut.<br/><br/>Selanjutnya adalah penentuan segmen COA untuk transaksi penerimaan. Permasalahan  utama adalah kurangnya dokumentasi tentang siapa yang bertanggung jawab atas satu transaksi penerimaan sehingga penentuan pengisian segmen-segmen COA tersebut. Permasalahan lain adalah perlunya cara yang tidak memberatkan penyetor dalam pembayaran kewajibannya tetapi segmen COA yang diwajibkan di isi dalam SPAN tetap ada lengkap.<br/><br/>Contohnya adalah, dalam setoran Pajak, tidak ada kode satker KPP dalam data penerimaan yang dikirim oleh bank persepsi ke KPPN, akibatnya rekonsiliasi yang seharusnya dilakukan antara satker KPP dengan KPPN menyangkut realisasi penerimaaan perpajakan tidak dapat dilakukan.<br/><br/>Solusinya adalah, adanya mapping antara kode KPP ke dalam kode satker yang digunakan oleh SPAN.<br/><br/>Setelah selesai reviu jurnal ini, dilanjutkan dengan link test yang ternyata memakan waktu dan stamina, apalagi dilakukan secara marathon sejak pagi hingga siang serta dalam kondisi berpuasa.....

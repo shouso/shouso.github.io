@@ -1,0 +1,19 @@
+---
+layout: post
+title: Debian Squeeze Poor Man Install
+date: '2011-03-07T16:21:00.000-08:00'
+author: Shouso
+tags:
+- FOSS
+- free
+- Install
+- pribadi
+- debian
+- Gnome
+- poorman
+modified_time: '2013-04-03T00:27:33.284-07:00'
+blogger_id: tag:blogger.com,1999:blog-1667078280118069816.post-2442568777833655200
+blogger_orig_url: https://www.naciro.xyz/2011/03/debian-squeeze-poor-man-install.html
+---
+
+<div style="text-align: justify;">Nasib... nasib...jadi poor man memang ga enak banget...mau install Debian Squeeze aja jadi kesusahan.</div><br /><div style="text-align: justify;">Definisi poorman disini adalah  PCnya ga bisa bootin lewat USB port, dan ga ada Floppy sama ga ada CD/DVD ROM.</div><br /><div style="text-align: justify;">Jalan satu-satunya ya harus install lewat partisi Harddisk dong.. dan untungnya Debian menyediakan pilihan itu.</div><br /><div style="text-align: justify;">Lalu gimana sih langkah-langkah poorman install Squeeze, em.. minimal kayak gini deh...:</div><br /><div style="text-align: justify;">1. Prasyarat poorman install</div><br /><div style="text-align: justify;">- udah ada OS nya sebelumnya dan berfungsi</div><br /><div style="text-align: justify;">- ada satu partisi khusus buat menmpung file ISO dan bootnya.</div><br /><div style="text-align: justify;">- download vmlinuz dan initrd.gz khusus buat hd install dari sini<a href="http://http.us.debian.org/debian/dists/squeeze/main/installer-amd64/current/images/hd-media/"> hd-media</a></div><br /><div style="text-align: justify;">2. format dulu partisinya, janga lupa di buat bootable terus copi file iso dan vmlinuz plus initrd.gz ke partisi tadi, jangan lupa buatin folder boot buat nampung tiga file tadi.</div><br /><div style="text-align: justify;">oya lupa, katanya wiki.debian LiLo ga mau booting dari NTFS, jadi jangan dformat NTFS ya?</div><br /><div style="text-align: justify;">3. edit file /etc/lilo.conf atau /boot/grub.cfg buat nambahin partisi tadi.</div><br /><div style="text-align: justify;">kalo udah coba di update lilo sama grubnya.</div><br /><div style="text-align: justify;">kalo lilo cukup ketik lilo, kalo grub ga usah diapa-apain.</div><br /><div style="text-align: justify;">3. udah itu silakan reboot... nah muncul ga di layarnya lilo sama grub?pilih pilihan booting yang barusan kita buat dan silakan lanjutkan instalasi seperti biasanya...</div><br /><div style="text-align: justify;">semoga berhasil...</div><br /><div style="text-align: justify;">sumber :</div><br /><div style="text-align: justify;">1. <a href="http://www.debian.org/releases/stable/amd64/">wiki.debian</a></div>

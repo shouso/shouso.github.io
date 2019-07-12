@@ -1,0 +1,18 @@
+---
+layout: post
+title: 'SOS : Rescue Using Testdisk, Photorec, dan Foremost'
+date: '2013-06-15T12:03:00.000-07:00'
+author: Shouso
+tags:
+- Foremost
+- Linux
+- Photorec
+- SOS
+- Testdisk
+- Blankon
+modified_time: '2013-06-15T12:10:49.747-07:00'
+blogger_id: tag:blogger.com,1999:blog-1667078280118069816.post-7642146178271457292
+blogger_orig_url: https://www.naciro.xyz/2013/06/sos-rescue-using-testdisk-photorec-dan.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://goteamplanet.files.wordpress.com/2011/05/sos.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://goteamplanet.files.wordpress.com/2011/05/sos.jpg" height="178" width="200" /></a>&nbsp;&nbsp;</div><div class="separator" style="clear: both; text-align: center;"><br /></div><div style="text-align: center;"><a href="http://goteamplanet.files.wordpress.com/2011/05/sos.jpg" target="_blank">SOS</a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Ada kalanya kita harus mempersiapkan diri dengan kondisi yang tak terduga, dan kali ini ketika partisi harddisk anda secara tidak sengaja terhapus..Apa yang akan anda lakukan?? Menyesali diri, atau mencari alternatif penyelesaian?Kalo kasus saya sih yang terhapus ga seberapa sih? cuman kalo misalnya yang terhapus itu data skripsi anda? Nah lho.... langkah preventifnya adalah secara berkala melakukan proses back-up ke media penyimpan lain, atau unggah ke layanan cloud.Kalo, enggak, coba lakukan proses recovery data menggunakan perangkat yang tersedia, yakni testdisk, photorec, dan foremost.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Nah, itukan perangkat di linux... iya, karena memang dalam prosesnya saya menggunakan Blankon 8 Rote Live CD....</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Nah, caranya sebagai berikut ini :</div><div style="text-align: justify;"></div><ol><li style="text-align: justify;">Pastikan partisi yang terhapus/terformat belum ditulis ulang, sehingga masih memungkinkan untuk memperoleh data yang terformat.</li><li style="text-align: justify;">siapkan livecd/liveusb nya</li><li style="text-align: justify;">booting via livecd/liveusb, dan jangan lupa siapkan koneksi internet atau paket testdisk,testdisk-bdg, dan foremost dari repo blankon, karena biasanya tidak tersedia di livecd/liveusb ISO nya</li><li style="text-align: justify;">install testdisk, testdisk-dbg, dan foremost</li><li style="text-align: justify;">setelah siap, jalankan testdisknya, dengan mengetik testdisk di terminal menggunakan gakewenangan sebagai superuser.</li><li style="text-align: justify;">ikutin perintahnya dan tunggu sampe selesai proses recoverynya.pengalaman sih akan membentuk banyak folder bernama recup dan isinya macem-macem, kalo tidak dibatasi apa yang akan direcovery, atau istilahnya kalau kita menggunakan metode brute force, alias recovery seluruh harddisk. Kalo mau spesifik, isi aja di bagian option, apa yang mau di recovery, file JPG misalnya.</li><li style="text-align: justify;">Mengapa harus menggunakan Live CD, ini untuk memudahkan proses aja, dan menjamin kalau partisi yang terformat/terhapus tidak tertimpa proses read/write dan meningkatkan persentase keberhasilan recovery, kalo dual boot dan masih ada linux yang berfungsi, serta grubnya ga rusak, coba pake linux tersebut juga ga masalah...</li></ol><div style="text-align: justify;">oke... happy recovery.... tutorial makenya nanti ya hehe</div>
